@@ -1,0 +1,29 @@
+@use "../base/devices";
+
+@media #{devices.$smartphone} {
+  .c-data {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  .l-benefits {
+    &__content {
+      padding: 4rem 0;
+    }
+  }
+
+  .c-newsletter {
+    &__form {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__email {
+      width: 100%;
+    }
+  }
+
+  .c-button-square {
+    align-self: flex-end;
+  }
+}

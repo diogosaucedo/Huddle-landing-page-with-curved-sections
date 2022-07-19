@@ -1,0 +1,11 @@
+@use "../base/extends";
+@use "../base/functions";
+
+.c-social-network {
+  @extend %u-display-flex;
+  gap: functions.fluid-size(20, 25, 375, 1400);
+
+  &__item {
+    font-size: functions.fluid-size(24, 36, 375, 1400);
+  }
+}

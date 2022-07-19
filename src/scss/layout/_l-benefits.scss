@@ -1,0 +1,33 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.l-benefits {
+  @extend %u-display-flex, %u-direction-column, %u-align-center;
+  width: 100%;
+
+  &__background-colorful {
+    @extend %u-display-flex, %u-direction-column, %u-align-center;
+    width: 100%;
+    background-color: colors.$very-pale-blue;
+  }
+
+  &__content {
+    @extend %u-display-flex, %u-align-center, %u-justify-space-between;
+    width: clamp(30rem, 90%, 135rem);
+  }
+
+  &__left,
+  &__right {
+    @extend %u-display-flex, %u-align-center, %u-justify-center;
+    flex: 1 1 30rem;
+  }
+
+  // Child components
+  .c-section {
+    max-width: clamp(20rem, 90%, 58rem);
+  }
+
+  .c-illustration {
+    width: 80%;
+  }
+}

@@ -1,0 +1,42 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.l-footer {
+  width: 100%;
+
+  &__background {
+    @extend %u-display-flex, %u-justify-center;
+    padding: 10rem 0;
+    background-color: colors.$very-dark-cyan;
+  }
+
+  &__content {
+    @extend %u-display-flex;
+    width: clamp(30rem, 90%, 130rem);
+    color: colors.$white;
+  }
+
+  &__left,
+  &__right {
+    flex: 1 1 30rem;
+  }
+
+  &__left {
+    @extend %u-display-flex, %u-justify-start, %u-direction-column;
+    gap: 8rem;
+  }
+
+  &__right {
+    @extend %u-display-flex, %u-justify-end;
+  }
+
+  // Child components
+
+  .c-contacts {
+    max-width: 35rem;
+  }
+
+  .c-logo {
+    width: 24rem;
+  }
+}

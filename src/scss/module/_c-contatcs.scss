@@ -1,0 +1,17 @@
+@use "../base/extends";
+
+.c-contacts {
+  @extend %u-display-flex, %u-direction-column;
+  gap: 2rem;
+  
+  font-size: 1.6rem;
+  
+  &__item {
+    @extend %u-display-flex;
+    gap: 2rem;
+  }
+
+  &__icon {
+    width: 2rem;
+  }
+}

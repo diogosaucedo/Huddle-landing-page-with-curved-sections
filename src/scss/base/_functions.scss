@@ -1,0 +1,23 @@
+@use "sass:math";
+
+@function fluid-size(
+  $min-size,
+  $max-size,
+  $min-viewport-width,
+  $max-viewport-width
+) {
+  $viewport-width: math.div(100 * ($max-size - $min-size), $max-viewport-width - $min-viewport-width) * 1vw;
+
+  // We are using 1rem = 10px
+  $rem: math.div(($min-viewport-width * $max-size) - ($max-viewport-width * $min-size),
+    ($min-viewport-width - $max-viewport-width)) * 0.1rem;
+
+
+  $min-size-rem: math.div($min-size, 10) * 1rem;
+
+  $max-size-rem: math.div($max-size , 10) * 1rem;
+
+  $clamp: clamp($min-size-rem,($viewport-width  + $rem),$max-size-rem );
+
+  @return $clamp;
+}

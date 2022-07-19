@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- About the projeto -->
+    <title>Huddle landing page with curved sections</title>
+    <meta name="author" content="Diogo F. Saucedo" />
+    <meta
+      name="description"
+      content="Frontend Mentor's “Huddle landing page with curved sections” challenge."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <main class="l-main">
+      <header class="l-header">
+        <div class="l-header__top">
+          <nav class="c-nav">
+            <ul class="c-nav__list">
+              <li class="c-nav__item">
+                <figure class="c-logo">
+                  <img
+                    src="./assets/images/logo.svg"
+                    alt="Logo Huddle"
+                    class="c-logo__image"
+                  />
+                </figure>
+              </li>
+              <li class="c-nav__item">
+                <button class="c-button c-button-white">Try it Free</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="l-header__bottom">
+          <div class="c-section c-section-center">
+            <h1 class="c-section__title-1">
+              Build The Community Your Fans Will Love
+            </h1>
+            <p class="c-section__text-1">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+          </div>
+          <button class="c-button c-button-rounded">
+            Get Started For Free
+          </button>
+        </div>
+      </header>
+      <figure class="c-illustration">
+        <img
+          src="./assets/images/screen-mockups.svg"
+          alt=" image screen mockups"
+          class="c-illustration__image"
+        />
+      </figure>
+      <div class="c-data">
+        <div class="c-data__item">
+          <img
+            src="./assets/images/icon-communities.svg"
+            alt="Icon Community"
+            class="c-data__icon"
+          />
+          <p class="c-data__value">1.4k+</p>
+          <p class="c-data__label">Communities Formed</p>
+        </div>
+        <div class="c-data__item">
+          <img
+            src="./assets/images/icon-messages.svg"
+            alt="Icon Messages"
+            class="c-data__icon"
+          />
+          <p class="c-data__value">2.7m+</p>
+          <p class="c-data__label">Messages Sent</p>
+        </div>
+      </div>
+      <div class="l-benefits">
+        <picture class="c-background">
+          <source
+            srcset="./assets/images/bg-section-top-mobile-1.svg"
+            media="(max-width:425px)"
+          />
+          <img
+            src="./assets/images/bg-section-top-desktop-1.svg"
+            alt="Background sections"
+            class="c-background__image"
+          />
+        </picture>
+        <div class="l-benefits__background-colorful">
+          <div class="l-benefits__content">
+            <div class="l-benefits__left">
+              <div class="c-section">
+                <h2 class="c-section__title-2">Grow Together</h2>
+                <p class="c-section__text-2">
+                  Generate meaningful discussions with your audience and build a
+                  strong, loyal community. Think of the insightful conversations
+                  you miss out on with a feedback form.
+                </p>
+              </div>
+            </div>
+            <div class="l-benefits__right">
+              <figure class="c-illustration">
+                <img
+                  src="./assets/images/illustration-grow-together.svg"
+                  alt="Illustration grow together"
+                  class="c-illustration__image"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <picture class="c-background">
+          <source
+            srcset="./assets/images/bg-section-bottom-mobile-1.svg"
+            media="(max-width:425px)"
+          />
+          <img
+            src="./assets/images/bg-section-bottom-desktop-1.svg"
+            alt="Background sections"
+            class="c-background__image"
+          />
+        </picture>
+      </div>
+      <div class="l-benefits">
+        <div class="l-benefits__content">
+          <div class="l-benefits__left">
+            <figure class="c-illustration">
+              <img
+                src="./assets/images/illustration-flowing-conversation.svg"
+                alt="Illustration flowing conversation"
+                class="c-illustration__image"
+              />
+            </figure>
+          </div>
+          <div class="l-benefits__right">
+            <div class="c-section">
+              <h2 class="c-section__title-2">Flowing Conversations</h2>
+              <p class="c-section__text-2">
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-benefits">
+        <picture class="c-background">
+          <source
+            srcset="./assets/images/bg-section-top-mobile-2.svg"
+            media="(max-width:425px)"
+          />
+          <img
+            src="./assets/images/bg-section-top-desktop-2.svg"
+            alt="Background sections"
+            class="c-background__image"
+          />
+        </picture>
+        <div class="l-benefits__background-colorful">
+          <div class="l-benefits__content">
+            <div class="l-benefits__left">
+              <div class="c-section">
+                <h2 class="c-section__title-2">Your Users</h2>
+                <p class="c-section__text-2">
+                  It takes no time at all to integrate Huddle with your app's
+                  authentication solution. This means, once signed in to your
+                  app, your users can start chatting immediately.
+                </p>
+              </div>
+            </div>
+            <div class="l-benefits__right">
+              <figure class="c-illustration">
+                <img
+                  src="./assets/images/illustration-your-users.svg"
+                  alt="Illustration your users"
+                  class="c-illustration__image"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <picture class="c-background">
+          <source
+            srcset="./assets/images/bg-section-bottom-mobile-2.svg"
+            media="(max-width:425px)"
+          />
+          <img
+            src="./assets/images/bg-section-bottom-desktop-2.svg"
+            alt="Background sections"
+            class="c-background__image"
+          />
+        </picture>
+      </div>
+      <div class="c-section c-section-center">
+        <h3 class="c-section__invitation-title">
+          Ready To Build Your Community?
+        </h3>
+        <button class="c-button c-button-rounded">Get Started For Free</button>
+      </div>
+
+      <footer class="l-footer">
+        <picture class="c-background">
+          <source
+            srcset="../assets/images/bg-footer-top-mobile.svg"
+            media="(max-width:425px)"
+          />
+          <img
+            src="./assets/images/bg-footer-top-desktop.svg"
+            alt="Background sections"
+            class="c-background__image"
+          />
+        </picture>
+        <div class="l-footer__background">
+          <div class="l-footer__content">
+            <div class="l-footer__left">
+              <div class="c-contacts">
+                <figure class="c-logo c-logo-footer">
+                  <img
+                    src="./assets/images/logo-white.svg"
+                    alt="Logo Huddle"
+                    class="c-logo__image"
+                  />
+                </figure>
+                <p class="c-contacts__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices
+                  quis sem.
+                </p>
+                <div class="c-contacts__item">
+                  <img
+                    src="./assets/images/icon-phone.svg"
+                    alt="Icon Phone"
+                    class="c-contacts__icon"
+                  />
+                  <p class="c-contacts__adress">Phone: +1-543-123-4567</p>
+                </div>
+                <div class="c-contacts__item">
+                  <img
+                    src="./assets/images/icon-email.svg"
+                    alt="Icon email"
+                    class="c-contacts__icon"
+                  />
+                  <p class="c-contacts__adress">example@huddle.com</p>
+                </div>
+              </div>
+              <div class="c-social-network">
+                <i
+                  class="fa-brands fa-facebook-square c-social-network__item"
+                ></i>
+                <i class="fa-brands fa-instagram c-social-network__item"></i>
+                <i
+                  class="fa-brands fa-twitter-square c-social-network__item"
+                ></i>
+              </div>
+            </div>
+            <div class="l-footer__right">
+              <div class="c-newsletter">
+                <h4 class="c-newsletter__title">Newsletter</h4>
+                <p class="c-newsletter__text">
+                  To recieve tips on how to grow your community, sign up to our
+                  weekly newsletter. We’ll never send you spam or pass on your
+                  email address
+                </p>
+                <form action="#" method="post" class="c-newsletter__form">
+                  <input
+                    title="Input email"
+                    type="email"
+                    required
+                    class="c-newsletter__email"
+                  />
+                  <button class="c-button c-button-square">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <!-- Fontawesome -->
+  <script
+    src="https://kit.fontawesome.com/3698974dd8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

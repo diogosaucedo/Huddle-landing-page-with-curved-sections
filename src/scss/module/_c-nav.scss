@@ -1,0 +1,10 @@
+@use "../base/extends";
+
+.c-nav {
+  @extend %u-display-flex, %u-align-center;
+
+  &__list {
+    @extend %u-display-flex, %u-justify-space-between, %u-align-center;
+    width: 100%;
+  }
+}

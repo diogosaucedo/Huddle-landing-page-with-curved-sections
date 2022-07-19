@@ -1,0 +1,40 @@
+@use "../base/extends";
+@use "../base/functions";
+
+.l-header {
+  @extend %u-display-flex, %u-direction-column;
+  gap: functions.fluid-size(70, 200, 375, 1400);
+  width: clamp(30rem, 90%, 135rem);
+
+  &__bottom {
+    @extend %u-display-flex, %u-direction-column, %u-align-center;
+    gap: 5rem;
+  }
+
+  // Child components
+  .c-button-white {
+    width: functions.fluid-size(80, 140, 375, 1400);
+    height: functions.fluid-size(25, 40, 375, 1400);
+  }
+
+  .c-logo {
+    width: functions.fluid-size(100, 240, 375, 1400);
+  }
+
+  .c-button-rounded {
+    width: functions.fluid-size(200, 400, 375, 1400);
+    height: functions.fluid-size(40, 80, 375, 1400);
+  }
+
+  .c-section__title-1 {
+    max-width: 90%;
+  }
+
+  .c-section__text-1 {
+    max-width: clamp(38ch, 90%, 52ch);
+  }
+  
+  .c-nav {
+    height: functions.fluid-size(100, 200, 375, 1400);
+  }
+}

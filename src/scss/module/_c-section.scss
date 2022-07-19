@@ -1,0 +1,41 @@
+@use "../base/functions";
+@use "../base/extends";
+
+.c-section {
+  @extend %u-display-flex, %u-direction-column;
+  gap: 2rem;
+
+  // Variations
+  &-center {
+    @extend %u-align-center;
+    width: 100%;
+    text-align: center;
+  }
+
+  // Elements
+  &__title-1 {
+    font-size: functions.fluid-size(24, 52, 375, 1400);
+  }
+
+  &__title-2 {
+    font-size: functions.fluid-size(20, 42, 375, 1400);
+  }
+
+  &__invitation-title {
+    font-size: functions.fluid-size(24, 42, 375, 1400);
+  }
+
+  &__text-1 {
+    font-size: functions.fluid-size(14, 22, 375, 1400);
+  }
+
+  &__text-2 {
+    font-size: functions.fluid-size(14, 18, 375, 1400);
+  }
+
+  // Child components
+  .c-button-rounded {
+    width: functions.fluid-size(200, 400, 375, 1400);
+    height: functions.fluid-size(40, 80, 375, 1400);
+  }
+}

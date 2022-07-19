@@ -1,0 +1,22 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.l-main {
+  @extend %u-display-flex, %u-direction-column, %u-align-center;
+  gap: 10rem;
+
+  width: 100%;
+
+  background-color: colors.$white;
+
+  // Child components
+  .c-data,
+  > .c-section {
+    width: clamp(30rem, 90%, 135rem);
+  }
+
+  > .c-illustration {
+    @extend %u-display-flex, %u-justify-center;
+    width: 90%;
+  }
+}

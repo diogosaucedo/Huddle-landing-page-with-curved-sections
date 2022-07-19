@@ -1,0 +1,29 @@
+@use "../base/devices";
+
+@media #{devices.$tablet}, #{devices.$smartphone} {
+  .l-benefits {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__background-colorful > .l-benefits__content {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .c-section {
+    text-align: center;
+    align-items: center;
+  }
+
+  .l-footer {
+    &__content {
+      flex-direction: column-reverse;
+      gap: 8rem;
+
+      &:last-child {
+        align-items: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../base/extends";
+@use "../base/functions";
+@use "../base/colors";
+
+.c-data {
+  @extend %u-display-flex, %u-justify-space-around, %u-flex-wrap;
+
+  &__item {
+    @extend %u-display-flex, %u-direction-column;
+    gap: 1rem;
+  }
+
+  &__icon {
+    width: functions.fluid-size(30, 49, 375, 1400);
+  }
+
+  &__value {
+    font-size: functions.fluid-size(60, 100, 375, 1400);
+    font-weight: 700;
+  }
+
+  &__label {
+    align-self: center;
+    font-size: functions.fluid-size(14, 24, 375, 1400);
+    color: darken(colors.$white, 50%);
+  }
+}
